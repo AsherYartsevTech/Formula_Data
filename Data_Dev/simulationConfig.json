@@ -1,0 +1,5 @@
+{
+	"ip": "127.0.0.1",
+	"mesh_names": { "spline_cones_best_200" },
+	"segmentation_LUT_filename": "seg_rgbs.txt"
+}
