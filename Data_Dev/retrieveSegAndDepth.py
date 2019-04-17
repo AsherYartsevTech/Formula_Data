@@ -1,9 +1,9 @@
 import setup_path 
 import airsim
 import numpy as np
-import cv2 #conda install opencv
+import cv2
 import time
-
+from simulationClass import Simulation
 
 ######## FUNCTIONS ########
 
@@ -59,15 +59,15 @@ def saveSnapshotsInPath(path):
 
 
 # connect to the AirSim simulator 
-client = airsim.CarClient()
-client.confirmConnection()
+#client = airsim.CarClient()
+#client.confirmConnection()
 #car_controls = airsim.CarControls()
 
 start = time.time()
 
 ## asher todo: extract to functionality
-success = client.simSetSegmentationObjectID('spline_cones_best_200', 20)
-conesId = client.simGetSegmentationObjectID('spline_cones_best')
+#success = client.simSetSegmentationObjectID('spline_cones_best_200', 20)
+#conesId = client.simGetSegmentationObjectID('spline_cones_best')
 
 
 print("Time,Speed,Gear,PX,PY,PZ,OW,OX,OY,OZ")
